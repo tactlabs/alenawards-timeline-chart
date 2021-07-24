@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<!-- 
+        source:https://alen.space/awards/        
+    -->
+
+<!-- 
+        source-code:https://codepen.io/pen/ 
+    -->    
+<head>
+    <title>tact</title>
+    <style>
+#container {
+  min-width:400px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+    </style>
+    </head>
+
+ <body>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/timeline.js"></script>
+    
+    <div id="container"></div>
+
+<script>
+    Highcharts.chart('container', {
+  chart: {
+    zoomType: 'x',
+    type: 'timeline'
+  },
+  xAxis: {
+    type: 'datetime',
+    visible: false
+  },
+  yAxis: {
+    gridLineWidth: 1,
+    title: null,
+    labels: {
+      enabled: false
+    }
+  },
+  legend: {
+    enabled: false
+  },
+  title: {
+    text: 'Timeline of enpulsion'
+  },
+  subtitle: {
+    text: 'Info source: <a href="https://en.wikipedia.org/wiki/Timeline_of_space_exploration">www.wikipedia.org</a>'
+  },
+  tooltip: {
+    style: {
+      width: 300
+    }
+  },
+  series: [{
+    dataLabels: {
+      allowOverlap: false,
+      format: '<span style="color:{point.color}">● </span><span style="font-weight: bold;" > ' +
+        '{point.x:%d %b %Y}</span><br/>{point.label}'
+    },
+    marker: {
+      symbol: 'circle'
+    },
+    data: [{
+      x: Date.UTC(2020, 3, 13),
+      name: 'SESA AWARDS',
+      label: 'SESA AWARDS',
+      description: "Alén Space won the category of Best Space Startup at the South Europe Startup Awards 2020 (SESA), which recognizes the most innovative initiatives from Cyprus, France, Greece, Italy, Malta, Portugal and Spain."
+    }, {
+      x: Date.UTC(2020, 2, 14),
+      name: 'EMPRENDEDORXXI GALICIA',
+      label: 'EMPRENDEDORXXI GALICIA',
+      description: "Alén Space won the EmprendedorXXI Awards in Galicia, promoted by CaixaBank through its division DayOne, with the collaboration of the public companies Enisa and Igape."
+    }, {
+      x: Date.UTC(2019, 6, 26),
+      name: 'CINCO DÍAS AWARDS',
+      label: 'CINCO DÍAS AWARDS',
+      description: "The Cinco Días Business Innovation Awards 2019 recognized Alén Space during its 12th edition with the distinction as the Most Innovative Business Action Linked to the University."
+    }, {
+      x: Date.UTC(2019, 12, 4),
+      name: 'December 4, 2019 EL REFERENTE AWARDS',
+      label: 'EL REFERENTE AWARDS',
+      description: "Alén Space was chosen as the second most innovative start-up in Spain in 2019 among more than 600 companies, and as the second classified in the first edition of El Referente Awards 2019."
+    }, {
+      x: Date.UTC(2019, 12, 11),
+      name: 'December 11, 2019 TECHNOLOGY TRANSFER AWARDS IN GALICIA',
+      label: 'TECHNOLOGY TRANSFER AWARDS IN GALICIA',
+      description: "Alén Space received the Ricardo Bescansa Martínez Award during the fifth edition of the Technology Transfer Awards in Galicia 2019, celebrated in Santiago de Compostela."
+    }, {
+      x: Date.UTC(2018, 12, 3),
+      name: 'EVERIS AWARDS',
+      label: 'EVERIS AWARDS',
+      description: "Alén Space was chosen as one of the six finalists at the 17th edition of the Everis Awards among more than 1,000 candidates from 20 countries. It also received the Audience and Media Special Award."
+    }, {
+      x: Date.UTC(2019,4, 12),
+      name: 'April 12, 2019 CHINA INNOVATION & ENTREPRENEURSHIP AWARDS',
+      label: 'CHINA INNOVATION & ENTREPRENEURSHIP AWARDS',
+      description: "Alén Space was awarded at the China Innovation & Entrepreneurship International Competition 2019 in the Electronics, Science and Technology category."
+    }, {
+      x: Date.UTC(2019, 2, 7),
+      name: 'February 7, 2019 ICT GALICIA AWARDS',
+      label: 'ICT GALICIA AWARDS',
+      description: "The ICT Galicia Awards 2019 recognised Alén Space as the Best Start-up of the year. The winner election was carried out by a double system of popular voting and an election by a jury of experts."
+    }, {
+      x: Date.UTC(2018, 8, 1),
+      name: 'SOUTH SUMMIT',
+      label: 'SOUTH SUMMIT',
+      description: "Among more than 3,000 projects from 84 countries, South Summit selected Alén Space as one of the 100 most innovative start-ups in the world and as a finalist at the Startup Competition 2018."
+    }]
+  }]
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
